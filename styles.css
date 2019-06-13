@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*
+	Project Version Three
+	Workout Website
+	
+	Title of Site: Start Today
+	Author: Clayten Hibbert
+	Date: 5/25/2019
+	FileName: styles.css
+*/
+/* HTML Styles */
+
+address, blockquote, article, body, h1, h2, h3, h4, h5, h6, header, img, html, li, main, nav, ol, p, section, ul {
+	background: transparent;
+	vertical-align: baseline;
+	margin:0;
+	padding:0;
+	font-size: 100%;
+}
+/* Page Body Styles */
+
+body {
+	background-color: Gainsboro; /*-- Found this color at https://www.w3schools.com/colors/colors_names.asp*/
+	color: maroon;
+	text-align: center;
+	margin: 50px 100px;
+}
+
+blockquote > * {
+	background-color: lightblue;
+	text-align: left;
+	-webkit-filter: brightness(0.5);
+	filter: brightness(0.5);
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+body > header > nav > ul {
+	text-align: left;
+	text-shadow: black 1px 1px 1px;
+	border-style:solid;
+	border-color: maroon; 
+	float: left;
+}
+body > header > ul {
+	list-style-type: none;
+	background-color: lightblue;
+}
+body a:active, body a:hover{
+	color: black;
+}
+
+a[href] {
+	color: maroon; 
+}
+
+nav::after{
+	clear:both;
+	content: "";
+	display: table;
+}
+
+body > header > img  {
+	clear: left;
+	opacity: 0.5;
+	transform: rotate(180deg);
+}
+/* Footer Styles */
+
+footer{
+	position: fixed;
+	bottom: 15px;
+}
+
+/* Table Styles */
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and 
+note the overall impact they have on the HTML)
+NOTE: The following styles make it so there is a light blue border around the outside of the table, along with
+a solid black border around all of the contents inside the rows and columns. It also made it so there are 
+50 pixels of distance between each data point in the columns.*/
+ 
+table.schedule {
+	width: 100%;
+	border: 9px solid lightblue;
+	border-collapse: collapse;
+}
+
+table.schedule tr {
+	height: 50px;
+}
+
+table.schedule td, table.schedule th {
+	border: 3px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

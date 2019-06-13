@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <!--
+            Project Version Three
+            Workout Website
+            
+            Title of Site: Start Today
+            Author: Clayten Hibbert
+            Date: 5/25/2019
+            FileName: bodyparts.html
+            -->
+        <title>Start Today</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+		<link href="phone.css" media="all" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="bodyparts.html">Body</a></li>
+            </ul>
+            </nav>
+			<ul class="hover">
+				<li>Body Parts</li>
+					<!--<ul class="hide">-->
+						<li>Chest: The Chest muscles are used mainly for pushing things.</li>
+						<li>Back: The Back muscles are used mainly for pulling things.</li>
+						<li>Shoulders: The Shoulder muscles are used for many different things,
+							they are incorporated in most movements done. These are important
+							for overall growth of the body.
+						</li>
+						<li>Arms: Consisting mainly of your biceps and triceps, these
+							also compliment all your other upper body parts. 
+						</li>
+						<li>Quadraceps: Main muscles of the front part of your leg.</li>
+						<li>Hamstrings: Main muscles of the back part of your leg.</li>
+						<li>Cores: Your core muscles take on the brunt of stabalizing duty. 
+							These are extremely important.
+						</li>
+					<!--</ul>-->	
+			</ul>	
+            <figure class="bodymap">
+                <img src = "body.jpg" alt="body" usemap="#body_map"/><!-- The URL for the picture is 
+                    https://www.google.com/search?tbm=isch&source=hp&biw=1920&bih=963&ei=IFLWXNiSMNf5-gTu9a_QBw&q=muscles+of+the+body&oq=muscles+of+the+body&gs_l=img.3..0l10.6310.8759..8889...1.0..1.332.1524.16j2j1j1......2....1..gws-wiz-img.....0.kZC1GhSduvY#imgrc=Or0bV26WMQ1_cM:
+                    -->
+                <figcaption>
+                    Click on a bodypart to learn more about it! (Only the arms and the legs work for this version)
+                </figcaption>
+            </figure>
+            <!--M4LO7 Demonstrate the use of image maps, including determining x and y values 
+                (HTML, note that you should not encompass the entire image with a single map entry)
+                NOTE: The image map will be finished in the next version of the project. If you click
+                on the arms or the legs it will take you to a page about them. -->
+            <map name= "body_map">
+                <area shape ="rect" alt="arms" coords="165,50,200,75" href="https://www.bodybuilding.com/topic/tricep">
+                <area shape ="rect" alt="arms" coords="113,90,130,125" href="https://www.bodybuilding.com/topic/tricep">
+                <area shape ="rect" alt="legs" coords="100,140,200,250" href="https://www.bodybuilding.com/topic/legs">
+            </map>
+        </header>
+		<!--M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have 
+		at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+		NOTE: The purpose is to give viewers possible ideas for workouts over the weeks.-->
+		<table class="schedule">
+			<caption>Possible Schedules</caption>
+			<colgroup>
+				<col class="WeekColumns" span="7"/>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+					<th>Sunday</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Chest and Triceps</td>
+					<td>Back and Biceps</td>
+					<td>Legs and Core</td>
+					<td>Shoulders</td>
+					<td>Arms/Core</td>
+					<td>Rest/Core</td>
+					<td>Rest</td>
+				</tr>
+				<tr>
+					<td>Legs and Core</td>
+					<td>Rest</td>
+					<td>Chest, Triceps, Shoulders, Core</td>
+					<td>Rest</td>
+					<td>Back, Biceps, Core</td>
+					<td>Rest</td>
+					<td>Legs and Core</td>
+				</tr>
+				<tr>
+					<td>Back, Biceps, Core</td>
+					<td>Chest, Triceps, Core</td>
+					<td>Rest</td>
+					<td>Shoulders, Arms</td>
+					<td>Legs, Core</td>
+					<td>Rest</td>
+					<td>Rest</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that 
+				causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+				NOTE: Spans columns.-->
+					<td colspan="7">There are many different possible schedules.</td>
+				</tr>
+			</tfoot>
+		</table>
+        <footer>
+            <a id="address"></a> 
+            <address style="color: black;">
+                &#9830; Created by Clayten Hibbert for Academic Use and Learning Only : CIS155 Spring Quarter Olympic College &#9830;
+            </address>
+        </footer>
+    </body>
+</html>
