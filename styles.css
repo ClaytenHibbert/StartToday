@@ -1,11 +1,11 @@
 @charset "utf-8";
 /*
-	Project Version Three
+	Project Version Four
 	Workout Website
 	
 	Title of Site: Start Today
 	Author: Clayten Hibbert
-	Date: 5/25/2019
+	Date: 6/13/2019
 	FileName: styles.css
 */
 /* HTML Styles */
@@ -22,6 +22,14 @@ address, blockquote, article, body, h1, h2, h3, h4, h5, h6, header, img, html, l
 body {
 	background-color: Gainsboro; /*-- Found this color at https://www.w3schools.com/colors/colors_names.asp*/
 	color: maroon;
+	/*M8LO10 Demonstrate a CSS animation or transition
+	(CSS, identify which is being done and its impact on the rendered HTML; note it has to include a time aspect, not be 
+	immediate) 
+	NOTE: The background changes from white to Gainsboro over 21 seconds. It is gradual, if you can't notice after a while 
+	refresh the page and youll notice the background change colors.*/
+	background: Gainsboro;
+	color: maroon;
+	transition: background 21s;
 	text-align: center;
 	margin: 50px 100px;
 }
@@ -60,26 +68,14 @@ nav::after{
 	display: table;
 }
 
-body > header > img  {
-	clear: left;
-	opacity: 0.5;
-	transform: rotate(180deg);
-}
 /* Footer Styles */
 
 footer{
 	position: fixed;
 	bottom: 15px;
 }
-
-/* Table Styles */
-/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and 
-note the overall impact they have on the HTML)
-NOTE: The following styles make it so there is a light blue border around the outside of the table, along with
-a solid black border around all of the contents inside the rows and columns. It also made it so there are 
-50 pixels of distance between each data point in the columns.*/
  
-table.schedule {
+table.schedule {7
 	width: 100%;
 	border: 9px solid lightblue;
 	border-collapse: collapse;
@@ -91,6 +87,17 @@ table.schedule tr {
 
 table.schedule td, table.schedule th {
 	border: 3px solid black;
+}
+
+/* Form Styles */
+
+
+/*M7LO11 Demonstrate how to format a form with CSS 
+(group your form styles together in your CSS file, and document their overall impact on the form)
+NOTE: This makes it so that my forms turn maroon when the person selects them. it helps the user see where they are typing/selecting. 
+*/
+input:focus, select:focus, textarea:focus {
+	background-color: maroon;
 }
 
 

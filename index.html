@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8"/>
         <!--
-            Project Version Three
+            Project Version Four
             Workout Website
             
             Title of Site: Start Today
             Author: Clayten Hibbert
-            Date: 5/25/2019
+            Date: 6/13/2019
             FileName: index.html
             -->
         <title>Start Today</title>
@@ -32,10 +32,7 @@
         <h1>
             This website will break the body into different groups of the body. Each group will
             be targeted. 
-            There is a lot more to be done with the website, in the mean time you can
-            <a href="https://www.bodybuilding.com">click here to visit another website while I work on this one!</a>
         </h1>
-        <!--M4LO1 Demonstrate the use of figure boxes (HTML)-->
         <figure>
             <img src = "body.jpg" alt=""/> <!-- The URL for the picture is 
                 https://www.google.com/search?tbm=isch&source=hp&biw=1920&bih=963&ei=IFLWXNiSMNf5-gTu9a_QBw&q=muscles+of+the+body&oq=muscles+of+the+body&gs_l=img.3..0l10.6310.8759..8889...1.0..1.332.1524.16j2j1j1......2....1..gws-wiz-img.....0.kZC1GhSduvY#imgrc=Or0bV26WMQ1_cM:
@@ -44,6 +41,47 @@
                 These are most of the muscles in your body
             </figcaption>
         </figure>
+		<p>For anyone looking for more information or advice, 
+		leave your information and you will be contacted promptly.</p>
+		<form action="#" type="get" />
+			<div>
+			<!-- M7LO5 Demonstrate the use of a text box in a form-->
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="clientName" placeholder="First and Last Name" />
+			</div>
+			<div>
+			<!--M7LO6 Demonstrate the use of check boxes in a form -->
+				<label for="gender">Male</label>
+				<input type="checkbox" id="genderBox" name="clientMale" placeholder="Male" />
+				<label for="femaleGender">Female</label>
+				<input type="checkbox" id="femaleGender" name="clientFemale" placeholder="Female"/>
+			</div>
+			<div>
+			<!-- M7LO8 Demonstrate the use of a selection list in a form-->
+				<label for="goal">Goal</label>
+				<select id="goal" name="clientGoal">
+					<option value="Lose">Lose Weight</option>
+					<option value="Gain">Gain Weight</option>
+				</select>
+			</div>
+			<div>
+			<!--M7LO10 Demonstrate the use of a submit button in a form -->
+				<input type="submit" value="Submit information" />
+			</div>
+		<section>
+			<article>
+			<!--M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page (HTML)
+			NOTE: I'm not sure why it isn't working on the site. I tried to figure it out.-->
+				<h1>The great Arnold Talking about Body Building</h1>
+				<video controls poster="*">
+				<source src="https://youtu.be/9CzmotLYznw" type="video/mp4" />
+				</video>
+			</article>
+		</section>
+		<!--M8LO9  Demonstrate the use of the iframe element (HTML)-->
+		<p>An Article to Read About 7-time Mr. Olympia Winner Phil Heath</p>
+		<iframe id="iframe" title="bodybuilding" width="500" height="300" src="https://puzzups.com/phil-heath-bodybuilding-age-career-wiki-girlfriend-relationship-net-worth/">
+		</iframe>
         <footer>
             <a id="address"></a> 
             <address style="color: black;">

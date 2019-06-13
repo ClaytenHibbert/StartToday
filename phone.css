@@ -1,11 +1,11 @@
 @charset "utf-8";
 /*
-	Project Version Three
+	Project Version Four
 	Workout Website
 	
 	Title of Site: Start Today
 	Author: Clayten Hibbert
-	Date: 5/25/2019
+	Date: 6/13/2019
 	FileName: phone.css
 */
 
@@ -14,43 +14,10 @@
 
 /* Flex Layout Styles */
 
-/* M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their 
-impact on the page's layout; this can be a new page or a redo of an existing page) */
-body.index {
-	display: -webkit-flex;
-	display: flex;
-	/*M5LO7 Demonstrate use of properties of flexbox containers 
-	(CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
-	NOTE: The impact of the wrap-reverse container is the image jumps from the bottom to the top of my page, 
-	I'll remove this in V4.*/
-	
-	-webkit-flex-flow: wrap-reverse;
-	flex-flow: wrap-reverse;
-	
-}
-
-/*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
-(CSS, note where these are in your CSS and describe the overall impact they have on the site)
-NOTE: This is probably incomplete. I tired to move the body map to the top of the screen and I've
-been at it for hours, but can't see what I'm doing wrong. */
 @media only screen and (max-width: 480px) {
 	figure.bodymap {
 		width: 100%;
 		-webkit-order: 1;
 		order: 1;
 	}
-	
-/* Pulldown Menu Styles */
-/*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) 
-(CSS, note where the menu is on your site and how it behaves) 
-I attempted this as a hover menu, but again couldn't figure it out after many attempts of trial 
-and error. */
-/*	ul.hide {
-		display:none;
-	}
-	
-	ul.hover:hover+ul.hide, ul.hide:hover {
-		display: block;
-	}*/
 
-}
